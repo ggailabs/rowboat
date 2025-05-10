@@ -6,7 +6,7 @@ services:
       context: ./apps/rowboat
       dockerfile: Dockerfile
     ports:
-      - "3002:3000"
+      - "3005:3000"
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - MONGODB_CONNECTION_STRING=mongodb://mongo:27017/rowboat
